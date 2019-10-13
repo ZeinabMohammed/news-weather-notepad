@@ -8,7 +8,6 @@ requests-oauthlib==1.2.0
 django==2.1.5
 whitenoise
 gunicorn
-Pillow
 django-heroku
 djangorestframework
 django-registration==2.4.1
