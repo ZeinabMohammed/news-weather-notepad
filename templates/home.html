@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content%}
+<body class="valign-wrapper #e0e0e0 grey lighten-2">
+
+  <div class="row center-align ">
+    <br><br><br><br><br>
+    <div class="col s12 m4 ">
+      <div class="card-panel #ffab91 deep-orange lighten-3">
+    <a href="{% url 'news:scrape'%}" class="teal-text">
+    <div class="card-panel hoverable"><br><br>
+      <!-- <div class="card-panel hoverable"> -->
+     <h5 class='teal-text'> <i class="fas fa-newspaper"></i> News (Youm7 headlines)</h5><br><br><br>
+      </div>
+    </a>
+  </div></div>
+
+   <div class="valign col s12 m4">
+      <div class="card-panel #ffab91 deep-orange lighten-3">
+    <a href="{% url 'weather:weather'%}" class="teal-text">
+    <div class="card-panel hoverable  "><br><br>
+      <!-- <div class="card-panel hoverable"> -->
+     <h5 class='teal-text'> <i class="fas fa-cloud"></i> Check weather</h5><br><br><br>
+      </div>
+    </a>
+  </div></div>
+
+
+  <div class="col s12 m4">
+      <div class="card-panel #ffab91 deep-orange lighten-3">
+    <!-- <img src="{% static 'static/admin/img/youm.jpg' %}"/> -->
+    <a href="{% url 'notes:list'%}" class="#004d40 teal darken-4">
+    <div class="card-panel hoverable">
+      <!-- <div class="card-panel hoverable"> -->
+      <br><br><br><h5 class='teal-text'><i class="far fa-sticky-note"></i>
+
+ Notes (Personal Notes)</h5><br><br><br>
+      </div>
+    </a>
+  </div></div>
+  
+</div>
+
+
+         </body>
+    {% endblock %}

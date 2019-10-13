@@ -1,0 +1,24 @@
+
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+<div class="fluid  red center-align white-text"><br><h5>Youm7 Headlines</h5>   
+ 
+<br><a  class="white-text"href="https://www.youm7.com/">Visit</a></div>
+<div class="container">
+{% for title in titles%}
+<div class="row">
+  
+    <div class="col s12 m6">
+    <a href="{{head.link}}"> <div class="card gray lighten-2 ">
+        <div class="card-content red-text">
+          <span class="card-title">{{title}}</span>
+         
+        </div></div></a>
+       
+    </div>
+    {% endfor %}
+</div></div></div>
+<!-- {{head.title}}<hr> -->
+
+{% endblock %}

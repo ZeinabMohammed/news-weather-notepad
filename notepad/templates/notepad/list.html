@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+<body style="background: #fafafa;">
+<div class="container">
+	<div class="row">
+<h2 style="display:inline;"><i class="medium material-icons ">event_note</i>Your Notes</h2>  &nbsp;<a class="btn-floating btn-large waves-effect waves-light orange" href="{% url 'notes:create' %}"><i class="material-icons">add</i>Add</a>
+</div>
+
+
+
+  <div class="row">
+  	{% for object in object_list%}
+    <div class="col s12 m6">
+      <div class="card teal lighten-2  hoverable">
+        <div class="card-content white-text">
+          <span class="card-title">{{object}}</span>
+          <p>{{object.timestamp}}</p>
+        </div>
+        <div class="card-action">
+         <small><a href="{{object.get_update_url}}"><i class="tiny material-icons create">create</i>Update..</a></small>
+          <small><a href="{{object.get_delete_url}}"><i class="tiny material-icons delete">delete</i>&nbsp;Delete!</a></small>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div></div></body>
+{% endblock %}
