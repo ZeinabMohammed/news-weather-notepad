@@ -26,7 +26,7 @@ SECRET_KEY = '+@h(wvrye17bvl3d72*%4bnzpihb)$p5ckghitz-%kkb6rkz9*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['notepadandnews.herokuapp.com']
 
 
 # Application definition
