@@ -10,7 +10,7 @@ whitenoise
 gunicorn
 django-heroku
 djangorestframework
-django-registration==2.4.1
+django-registration==3.1.2
 cloudinary
 soupsieve==1.9.1
 sqlparse==0.3.0
